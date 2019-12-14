@@ -49,4 +49,4 @@ const countdown = (deadline, elem, finalMessage) => {
 };
 
 
-countdown('Dec 24 2019 23:59:59 GMT-0500', 'clock' , 'Feliz 2020 :)')
+countdown('Dec 24 2019 23:59:59 GMT-0500', 'clock' , 'Feliz Navidad 2019 :)')
