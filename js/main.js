@@ -21,7 +21,25 @@ const countdown = (deadline, elem, finalMessage) => {
 
     const timerUpdate = setInterval( () => {
         let t = getRemainTime(deadline);
-        el.innerHTML = `${t.remainDays}d:${t.remainHours}h:${t.remainMinutes}m:${t.remainSeconds}s`;
+        el.innerHTML = `
+        
+        <div class="box-number" id="days">
+            <span class="number">${t.remainDays}</span>
+            <span class="text">Days</span>
+        </div>
+        <div class="box-number" id="hours">
+            <span class="number">${t.remainHours}</span>
+            <span class="text">Hours</span>
+        </div>
+        <div class="box-number" id="minutes">
+            <span class="number">${t.remainMinutes}</span>
+            <span class="text">Minutes</span>
+        </div>
+        <div class="box-number" id="seconds">
+            <span class="number">${t.remainSeconds}</span>
+            <span class="text">Seconds</span>
+        </div>
+        `;
 
         if(t.remainTime <= 1){
             clearInterval(timerUpdate)
@@ -31,4 +49,4 @@ const countdown = (deadline, elem, finalMessage) => {
 };
 
 
-countdown('Jan 03 2020 05:15:16 GMT-0500', 'clock' , 'Feliz 2020 :)')
+countdown('Dec 24 2019 23:59:59 GMT-0500', 'clock' , 'Feliz 2020 :)')

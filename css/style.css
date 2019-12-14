@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html{
+    height: 100%;
+}
+
+body{
+    background: rgb(95,36,123);
+    background: linear-gradient(180deg, rgba(95,36,123,1) 0%, rgba(131,0,134,1) 100%);
+}
+
+.container{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 2em;
+    font-weight: normal;
+}
+
+#clock{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #f3f3f3;
+    padding: 2em;
+}
+
+.box-number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    
+}
+
+.number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(95,36,123);
+    background: linear-gradient(180deg, rgba(95,36,123,1) 0%, rgba(131,0,134,1) 100%);
+    padding: .5em;
+    border-radius: 5px;
+    font-size: 3em;
+    width: 50px;
+    height: 50px;
+    color: white;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.37);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.37);
+}
+
+.text{
+    color: black;
+    opacity: .67;
+    margin-top: 1em;
+}
